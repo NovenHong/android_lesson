@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    app:startDestination="@id/leaderboard"
+    >
+
+    <fragment
+        android:id="@+id/leaderboard"
+        android:name="com.example.bottomnavigation.list.Leaderboard"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_leaderboard"
+        >
+        <action
+            android:id="@+id/action_leaderboard_to_userProfile"
+            app:destination="@id/userProfile"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.example.bottomnavigation.list.UserProfile"
+        android:label="@string/title_detail"
+        tools:layout="@layout/fragment_user_profile"
+        >
+        <argument
+            android:name="userName"
+            app:argType="string"
+            />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    >
+    <Button
+        android:id="@+id/bottom_nav_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_play"
+        android:text="@string/bottom_nav_button1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="10sp"
+        android:padding="5dp"
+        android:drawableTint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        android:contentDescription="@string/bottom_nav_button1"
+        android:layout_weight="1"
+        android:background="#00000000"
+        />
+
+    <Button
+        android:id="@+id/bottom_nav_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_video"
+        android:text="@string/bottom_nav_button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="10sp"
+        android:padding="5dp"
+        android:drawableTint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        android:contentDescription="@string/bottom_nav_button2"
+        android:layout_weight="1"
+        android:background="#00000000"
+        />
+
+    <ImageButton
+        android:id="@+id/bottom_nav_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:contentDescription="@string/bottom_nav_button3"
+        android:layout_weight="1"
+        android:src="@drawable/ic_shutter"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:background="#00000000"
+        />
+
+    <Button
+        android:id="@+id/bottom_nav_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_ring"
+        android:text="@string/bottom_nav_button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="10sp"
+        android:padding="5dp"
+        android:drawableTint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        android:contentDescription="@string/bottom_nav_button4"
+        android:layout_weight="1"
+        android:background="#00000000"
+        />
+
+    <Button
+        android:id="@+id/bottom_nav_button5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_userme"
+        android:text="@string/bottom_nav_button5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="10sp"
+        android:padding="5dp"
+        android:drawableTint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        android:contentDescription="@string/bottom_nav_button5"
+        android:layout_weight="1"
+        android:background="#00000000"
+        />
+</LinearLayout>

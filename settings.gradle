@@ -1,0 +1,2 @@
+include ':navigation', ':bottomnavigation', ':tabnavigation', ':verticalviewpager', ':ws', 'advancednavigation', ':library'
+rootProject.name='My Application'

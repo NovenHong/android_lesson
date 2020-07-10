@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rank"
+        android:textColor="#757575"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider8"
+        app:layout_constraintBottom_toBottomOf="@id/divider8"
+        />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toEndOf="@id/textView3"
+        app:layout_constraintEnd_toStartOf="@id/textView6"
+        app:layout_constraintTop_toTopOf="@id/textView6"
+        app:layout_constraintBottom_toBottomOf="@id/textView6"
+        android:background="#D8D8D8"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rank_1"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        android:textColor="#757575"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wins"
+        android:textColor="#757575"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textView17"
+        app:layout_constraintStart_toEndOf="@id/textView16"
+        app:layout_constraintTop_toTopOf="@id/textView16"
+        app:layout_constraintBottom_toBottomOf="@id/textView16"
+        android:background="#D8D8D8"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wins_amount"
+        android:textColor="#757575"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider9"
+        app:layout_constraintBottom_toBottomOf="@id/divider9"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

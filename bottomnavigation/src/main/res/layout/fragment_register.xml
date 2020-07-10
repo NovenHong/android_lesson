@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.bottomnavigation.form.Register"
+    app:layout_editor_absoluteY="81dp"
+    >
+
+    <TextView
+        android:id="@+id/avatar_text_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_an_avatar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/include_avatar_picker"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <include
+        android:id="@+id/include_avatar_picker"
+        layout="@layout/layout_picker"
+        android:layout_height="200dp"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_text_label"
+        app:layout_constraintBottom_toTopOf="@id/user_name_text"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        />
+
+    <EditText
+        android:id="@+id/user_name_text"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_avatar_picker"
+        app:layout_constraintBottom_toTopOf="@id/email_text"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="4dp"
+        />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_name_text"
+        app:layout_constraintBottom_toTopOf="@id/password_text"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_text"
+        app:layout_constraintBottom_toTopOf="@id/signup_btn"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_text"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="@string/sign_up"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
